@@ -1,0 +1,85 @@
+<!DOCTYPE >
+<html>
+<head>
+<title> تواصل معنا</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="external.css">
+</head>
+<body class="body">
+
+    <img src="الصور/شعار موسيقاتي.png" alt="شعار موسيقاتي">
+    
+    <div class="search-container ">
+    <input type="text"class="search">
+    <button class="search-button">بحث</button>
+    </div>
+
+    <br>
+
+    <div class="buttons">
+        <a href="الصفحة الرئيسية.html" class="button">الصفحة الرئيسية</a>
+        <a href="المتجر.html" class="button">المتجر</a>
+        <a href="الهدايا.html" class="button">الهدايا</a>
+        <a href="العروض الخاصة.html" class="button">العروض الخاصة</a>
+        <a href="من نحن.html" class="button">من نحن</a>
+        <a href="تواصل معنا.html" class="button">تواصل معنا</a>
+    </div> 
+
+    <br>
+
+<div class="form">
+    <h2 class="h2">تواصل معنا</h2>
+ <form>
+    <label>الاسم الاول</label><br><input type="text"><br>
+    <label>الاسم الاخير</label><br><input type="text"><br>
+    <label>رقم الهاتف </label><br><input type="text"><br>
+    <label>الرجاء تعبئة الايميل الخاص بك</label><br><input type="text"><br>
+    <label>الرجاء تعبئة رسالتك</label><br><textarea both;></textarea>
+ </form>
+  <button class="button" onclick="showMsg()">ارسل النموذج</button>   
+</div>
+
+<script>
+    function showMsg() {
+        alert("✅ تم ارسال طلبك بنجاح!");
+    }
+</script>
+
+<button id="upBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+<script>
+  const myButton = document.getElementById("upBtn");
+  window.onscroll = () => {
+    if (window.scrollY > 300) {
+      myButton.style.display = "block";
+    } else {
+      myButton.style.display = "none";
+    }
+  };
+</script>
+
+ <br>
+
+    <div class="zomm_button">
+    <button onclick="body.style.zoom='200%'">تكبير بنسبة 200% </button>
+    <button onclick="body.style.zoom='150%'">تكبير بنسبة 150% </button>
+    <button onclick="body.style.zoom='100%'">تصغير بنسبة 100% </button>
+    <button onclick="body.style.zoom='50%'">تصغير بنسبة 50% </button>
+    </div>
+
+  <br>
+  
+<footer class="site-footer">
+    <div class="footer-content">
+    <p>© 2026 جميع الحقوق محفوظة لمتجر <strong>موسيقاتي (Mosiqati)</strong></p>
+    </div>
+    <br>
+    <div class="social-icons">
+    <a href="https://web.facebook.com/mosiqati#" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/mosiqati/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UCjvgZA9kYAaY_duG5BxWIeg" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div> 
+
+</footer>
+
+</body>
+</html>
